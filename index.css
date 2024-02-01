@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Bellefair&family=Crimson+Text:wght@400;600&family=DM+Sans:wght@400;500;700&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,600;1,700;1,800&family=IBM+Plex+Sans:wght@300;500;600;700&family=Instrument+Serif&family=Inter:wght@200;300;400;500;600;700;800;900&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Lato:wght@400;900&family=Noto+Serif+NP+Hmong&family=Nunito:wght@400;500;600;700;800;900;1000&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,600&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Ubuntu:ital,wght@1,700&display=swap');
 body{
     margin: 0;
+    background: #f6f6f6;
 }
+/* ===================================== SIDE-NAV =====================================  */
+
 .side-nav{
     position: fixed;
     overflow: hidden;
@@ -25,7 +28,7 @@ body{
     font-weight: 700;
     color: #388087;;
     font-family: 'oswald';
-    font-size: 28px;
+    font-size: 24px;
 }
 .nav-items{
     height: 60%;
@@ -48,4 +51,111 @@ body{
 .nav-items a:hover{
     color:#fff;
     border-left: 3px solid #fff;
+}
+/* ===================================== TOP-NAV =====================================  */
+.top-nav{
+    position: fixed;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: 5%;
+}
+.user-text{
+    width: 30%;
+    margin-left: 2%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.user-text h1{
+        font-size: 25px;
+        font-weight: 600;
+        font-family: 'poppins';
+}
+.icons{
+    width: 25%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.icons div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'poppins';
+    transition: 0.2s;
+    cursor:pointer;
+}
+.icons div:hover{
+    color: #388087;
+}
+.icons div i{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.icons div p{
+    font-size: 12px;
+}
+.profile-area{
+    width: 95%;
+    margin-left: 5%;
+}
+.profile-box{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh; 
+}
+.first-part{
+    width: 60%;
+}
+.first-part h1{
+    font-size: 30px;
+    font-family: 'roboto';
+    font-weight: 400;
+    color: #787878;
+}
+.basic-info{
+    width: 100%;
+}
+.first-area{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    border: 1px solid red;
+
+}
+.profile-image{
+    width: 50%;
+    height: 50%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-image img{
+    width: 23%;
+    border-radius: 100%;
+    height: 80%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
+.name-box h4{
+    font-weight: 500;
+    color: #6c6c6c;
+    font-weight: 700;
+    font-family: Quicksand;
+}
+.name-box p{
+    margin-top: -20px;
+    font-family: poppins;
+    font-size: 12px;
+
 }
