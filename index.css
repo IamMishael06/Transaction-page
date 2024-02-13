@@ -218,7 +218,6 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
 }
 /* ======= ACCOUNT CARD =======*/
@@ -230,7 +229,7 @@ body{
     margin-top: 2vh;
     position: fixed;
     font-family: 'quicksand';
-
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .info-box{
     width: 80%;
@@ -249,4 +248,26 @@ body{
 .account-info div a{
     text-decoration: none;
     color: #000;
+}
+/* ======= LOAN HISTORY CARD =======*/
+.loan-history{
+    width: 370px;
+    height: 300px;
+    background: #fff;
+    border-radius: 1px;
+    position: fixed;
+    font-family: 'quicksand';
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    top: 55%;
+}
+.loan-history-area{
+    width: 80%;
+    margin: 0 auto;
+}
+.loan-history-area span{
+    display: flex;
+    align-items: center;
+}
+.loan-history-area span p{
+    padding-left: 3px;
 }
