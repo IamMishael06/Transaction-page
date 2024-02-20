@@ -271,3 +271,26 @@ body{
 .loan-history-area span p{
     padding-left: 3px;
 }
+.loan-activites{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+}
+.loan-info{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.loan-info p{
+    font-weight: 600;
+}
+.loan-info h5{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.loan-info span, .loan-info i{
+    color: #388087;
+}
+.see-more
