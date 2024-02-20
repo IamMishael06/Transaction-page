@@ -293,4 +293,13 @@ body{
 .loan-info span, .loan-info i{
     color: #388087;
 }
-.see-more
+.see-more{
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    gap: 2px;
+}
+.see-more a{
+    text-decoration: none;
+    color: #388087;
+}
