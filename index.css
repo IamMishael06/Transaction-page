@@ -20,7 +20,7 @@ body{
 }
 .logo{
     height: 10%;
-    background: #c2edce;
+    background: #fff;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -38,10 +38,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 50px;
 }
 .nav-items a{
-    color: #c2edce;
+    color: #fff;
     transition: 0.3s;
     width: 95%;
     margin: 0 auto;
@@ -53,11 +53,14 @@ body{
     color:#fff;
     border-left: 3px solid #fff;
 }
+.nav-items a i{
+    font-size: 16px;
+}
 /* ===================================== TOP-NAV =====================================  */
 .top-nav{
     position: fixed;
     height: 10vh;
-    background: #fff;
+    background: #388087;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +79,7 @@ body{
         font-size: 25px;
         font-weight: 600;
         font-family: 'poppins';
-        color: #388087;
+        color: #fff;
 }
 .icons{
     width: 25%;
@@ -94,6 +97,7 @@ body{
     font-family: 'poppins';
     transition: 0.2s;
     cursor:pointer;
+    color: #f6f6f6;
 }
 .icons div:hover{
     color: #388087;
@@ -108,11 +112,14 @@ body{
 /* ===================================== PROFILE AREA =====================================  */
 .profile-area{
     width: 95%;
+    height: auto;
     margin-left: 5%;
+ 
 }
 .profile-box{
     width: 90%;
     margin: 0 auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 10vh; 
@@ -120,6 +127,7 @@ body{
 /* ====================== FIRST AREA  ======================   */
 .first-part{
     width: 60%;
+    height: auto;
 }
 .first-part h1{
     font-size: 30px;
@@ -127,6 +135,7 @@ body{
     font-weight: 400;
     color: #787878;
 }
+/* ================== BASIC INFO  ==================*/
 .basic-info{
     width: 100%;
     display: flex;
@@ -210,6 +219,33 @@ body{
     font-size: 20px;
 
 }
+/* ============== PROFILE DETAILS ============== */
+.profile-details{
+    width: 90%;
+    margin-top: 5vh;
+    height: 300px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Quicksand';
+}
+.profile-details hr{
+    margin-top: 5px;
+}
+.profile-details-header{
+    padding:0 5px ;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.profile-details-header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    gap: 4px;
+    margin-left: auto;
+}
+
+
 
 /* ====================== SECOND AREA  ======================   */
 .second-side{
@@ -220,7 +256,7 @@ body{
     flex-direction: column;
 
 }
-/* ======= ACCOUNT CARD =======*/
+/*================= ACCOUNT CARD ================= */
 .account-info-area{
     width: 370px;
     height: 300px;
@@ -249,7 +285,7 @@ body{
     text-decoration: none;
     color: #000;
 }
-/* ======= LOAN HISTORY CARD =======*/
+/* ================= LOAN HISTORY CARD=================*/
 .loan-history{
     width: 370px;
     height: 300px;
