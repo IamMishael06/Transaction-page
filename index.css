@@ -227,11 +227,14 @@ body{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-family: 'Quicksand';
 }
+.profile-details i{
+    color: #388087;
+}
 .profile-details hr{
     margin-top: 5px;
 }
 .profile-details-header{
-    padding:0 5px ;
+    padding:0 10px ;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -244,9 +247,54 @@ body{
     gap: 4px;
     margin-left: auto;
 }
+.profile-info{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.profile-info span{
+    width: 48%;
+}
+.profile-info span{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.profile-info span{
+    font-weight: 600;
+}
+.profile-info span p{
+    font-size: 15px;
+    font-weight: 300;
+}
 
-
-
+/* ====================== TRANSACTION DETAILS  ======================   */
+.transaction-details{
+    width: 90%;
+    margin-top: 5vh;
+    height: 300px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: 'Quicksand';
+}
+.transaction-details hr{
+    margin-top: 5px;
+}
+.transaction-details-header{
+    padding:0 20px ;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.transaction-details-header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    gap: 4px;
+    margin-left: auto;
+}
 /* ====================== SECOND AREA  ======================   */
 .second-side{
     width: 30%;
