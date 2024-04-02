@@ -57,12 +57,17 @@ body{
 }
 .nav-items a:hover{
     color:#fff;
-
     border-left: 3px solid #fff;
 }
 .nav-items a i{
     font-size: 16px;
     padding-right: 5px;
+}
+.nav-items p{
+    display:  none;
+}
+.logout p{
+    display: none;
 }
 /* ===================================== TOP-NAV =====================================  */
 .top-nav{
@@ -106,9 +111,6 @@ body{
     transition: 0.2s;
     cursor:pointer;
     color: #f6f6f6;
-}
-.icons div:hover{
-    color: #388087;
 }
 .icons div i{
     font-size: 15px;
@@ -433,6 +435,17 @@ body{
         z-index: 100;
         transform: translateX(-100%);
     }
+    .nav-items{
+        height: 60%;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .nav-items p{
+        display: block;
+    }
+    .logout p{
+        display: block;
+    }
     .top-nav{
         width: 100%;
         margin: 0;
@@ -451,22 +464,28 @@ body{
     .logo h1{
         margin-left: 5px;
     }
-    .icons div p{
-        display: none;
-    }
+
     .user-text{
         width: 20%;
     }
     .user-text h1{
         font-size: 0px;
+        display: flex;
+        align-items: center;
     }
     .user-text h1::before{
         content: 'Mars';
         font-size: 15px;
     }
     .icons{
-        width: 25%;
+        width:60%;
+        justify-content: space-between;
         gap: 15px;
+        font-size: 18px;
+        align-items: start;
+    }
+        .icons div p{
+        font-size: 10px
     }
     .show-nav{
         display: block;
@@ -474,7 +493,6 @@ body{
     .profile-area{
         width: 100%;
         margin: 0;
-        border: 1px solid red;
     }
     .profile-box{
         flex-direction: column;
@@ -490,19 +508,7 @@ body{
         width: 100%;
         padding: 0;
     }
-    .loan-history{
-        position: relative;
-        background: red;
-        top: 0;
-        z-index: 99;
-    }
-    .second-side{
-        border: 1px solid yellow;
-        width: 100%;
-    }
-    .account-info-area{
-        border: 1px solid red;
-    }
+
     .first-part h1{
         font-size: 25px;
         margin-left: 5px;
@@ -565,5 +571,28 @@ body{
     }
     .short-transactions ul{
         width: 2%;
+    }
+    .second-side{
+        width: 100%;
+        position: initial;
+        margin-top: 5vh;
+
+    }
+    .loan-history{
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 99;
+        top: 0;
+        margin-top:10vh;
+        border-radius: 10px;
+    }
+
+    .account-info-area{
+        position: relative;
+        width: 90%;
+        border-radius: 10px;
+        margin: 0 auto;
     }
 }
